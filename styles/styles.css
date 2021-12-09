@@ -38,6 +38,9 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     outline: 4px dotted purple;
+    flex-wrap: wrap;
+    gap: 10%;
+    overflow:hidden;
 }
 
 .bottom{
@@ -45,7 +48,7 @@ body{
     outline: 4px dotted green;
 }
 
-.children-top{
+.children-top-left{
     width: 25%;
     height: auto;
     display: flex;
@@ -53,7 +56,19 @@ body{
     justify-content: center;
     outline: 3px solid rosybrown;
     border-radius: 10%;
-    flex-shrink: 1;
+    flex: 0 1 30%;
+    overflow: hidden;
+}
+
+.children-top-right{
+    width: 25%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 3px solid rosybrown;
+    border-radius: 10%;
+    flex: 0 1 30%;
     overflow: hidden;
 }
 
